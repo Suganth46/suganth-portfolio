@@ -1,0 +1,9 @@
+.nav { position: fixed; top: 0; width:100%; display:flex; justify-content:center; background:rgba(0,0,0,0.5); }
+.nav-link { margin: 0 1rem; cursor:pointer; color:#fff; text-transform:uppercase; }
+.proj-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1rem; }
+.tech-grid { display:flex; flex-wrap:wrap; gap:1rem; }
+.stats-card { background:#111; padding:1.5rem; border-radius:8px; text-align:center; }
+.card { display:block; background:#111; padding:1rem; border-radius:8px; text-decoration:none; color:#fff; }
+.avatar { width:80px; border-radius:50%; margin-bottom:1rem; }
+.spinner { width: 40px; height:40px; border:5px solid #333; border-top-color:#ff2079; border-radius:50%; animation:spin 1s linear infinite; }
+@keyframes spin { to { transform:rotate(360deg); } }

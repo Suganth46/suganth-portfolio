@@ -1,0 +1,189 @@
+/* --- The Definitive Top Navigation Bar --- */
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* A taller, more premium height */
+  z-index: 1000;
+  background: rgba(17, 17, 17, 0.8);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1400px; /* Constrains content on very large screens */
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+.nav-logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-color);
+  cursor: pointer;
+  letter-spacing: -1px;
+}
+
+/* Desktop Links Container */
+.nav-links-desktop {
+  display: flex;
+  gap: 2.5rem; /* Generous spacing for a clean look */
+}
+
+.nav-link {
+  color: var(--text-muted-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-link:hover {
+  color: var(--text-color);
+}
+
+/* Animated underline for active and hovered links */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+}
+
+/* Right-side actions (CTA button and hamburger) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Navbar CTA Button */
+.cta-button-nav {
+  background: var(--primary-color);
+  color: var(--background-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid var(--primary-color);
+}
+
+.cta-button-nav:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 170, 255, 0.3);
+  opacity: 1;
+}
+
+/* Hamburger Icon for Mobile */
+.hamburger-icon {
+  display: none; /* Hidden on desktop */
+  width: 30px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--text-color);
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animate hamburger to an 'X' */
+.hamburger-icon.open span:nth-child(1) {
+  transform: translateY(10.5px) rotate(45deg);
+}
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.open span:nth-child(3) {
+  transform: translateY(-10.5px) rotate(-45deg);
+}
+
+/* --- Mobile Menu Overlay --- */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 80px; /* Start below the navbar */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 2rem;
+  transform: translateY(-110%);
+  transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: 999;
+}
+
+.mobile-menu-overlay.open {
+  transform: translateY(0);
+}
+
+.mobile-nav-link {
+  font-size: 1.5rem;
+  color: var(--text-muted-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.mobile-cta-button {
+  background: var(--primary-color);
+  color: var(--background-color);
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+/* --- Responsive Media Query --- */
+@media (max-width: 768px) {
+  .nav-links-desktop,
+  .cta-button-nav {
+    display: none;
+  }
+  .hamburger-icon {
+    display: flex;
+  }
+}
