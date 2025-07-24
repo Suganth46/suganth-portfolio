@@ -9,7 +9,7 @@ export default function Preloader({ visible }) {
     <div className={preloaderClass}>
       <div className="preloader-content">
         {/* You can replace this with a logo if you have one */}
-        <h1 className="preloader-logo"></h1>
+        <h1 className="preloader-logo">SJ</h1>
         <div className="loader-bar"></div>
       </div>
     </div>

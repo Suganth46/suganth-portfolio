@@ -2,7 +2,7 @@ import React, { useState, useEffect, Suspense, lazy } from 'react';
 import './App.css';
 
 // Constants and Components
-import { GITHUB_USERNAME } from './utils/constants';
+// import { GITHUB_USERNAME } from './utils/constants';
 import Preloader from './components/common/Preloader';
 import Navigation from './components/ui/Navigation';
 import Hero from './components/sections/Hero';
