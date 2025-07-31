@@ -699,7 +699,7 @@
 
 /* Base section */
 .section {
-  min-height: 60vh;
+  /* min-height: 60vh; */
   width: 100%;
   padding: 4rem 2rem;
   text-align: center;

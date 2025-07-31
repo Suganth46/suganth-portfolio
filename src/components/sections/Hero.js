@@ -6,7 +6,7 @@ import './Sections.css';
 // Import your social icons
 import linkedinIcon from '../../assets/icons/social/linkedin.svg';
 import githubIcon from '../../assets/icons/social/github.svg';
-
+import leetcode from '../../assets/icons/social/leetcode.svg';
 export default function Hero() {
   return (
     <section id="hero" className="section hero-section">
@@ -49,6 +49,9 @@ export default function Hero() {
           </a>
           <a href="https://www.linkedin.com/in/suganth-j-3507b2293" target="_blank" rel="noopener noreferrer">
             <img src={linkedinIcon} alt="LinkedIn" />
+          </a>
+          <a href="https://leetcode.com/u/suganthsuganth749/" target="_blank" rel="noopener noreferrer">
+            <img src={leetcode} alt="LeetCode" />
           </a>
         </div>
       </div>
