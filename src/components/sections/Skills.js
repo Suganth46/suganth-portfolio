@@ -11,7 +11,7 @@ export default function Skills() {
     <section id="skills" className="section">
       <h2>My Technical Skills</h2>
       <p className="skills-intro">
-        Here are some of the key technologies and tools I work with to build efficient and reliable applications.
+        
       </p>
 
       <div className="skills-container">

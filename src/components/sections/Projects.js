@@ -23,7 +23,7 @@ export default function Projects({ username }) {
       {!loading && profile && (
         <>
           <p className="projects-intro">
-            Showing six of your most recently updated repositories.
+           
           </p>
 
           {repos.length > 0 ? (
