@@ -45,9 +45,10 @@ export const SKILL_CATEGORIES = [
     ],
   },
   {
-    title: 'Cloud & DevOps',
+    title: 'Cloud & OS',
     items: [
       { name: 'Git', icon: 'git.svg' },
+      { name: 'Linux', icon: 'linux.png' }
     ],
   },
   {
