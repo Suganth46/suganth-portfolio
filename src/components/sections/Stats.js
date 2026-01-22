@@ -4,7 +4,7 @@ import './Sections.css';
 
 export default function Stats() {
   const githubUser = "Suganth46";
-  const leetcodeUser = "suganthsuganth749";
+  const leetcodeUser = "Suganth46";
 
   // Update every 30 min to bust caches
   const [cacheBuster, setCacheBuster] = useState(Math.floor(Date.now() / (30 * 60 * 1000)));
