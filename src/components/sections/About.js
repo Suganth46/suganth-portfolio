@@ -2,7 +2,7 @@ import React from 'react';
 import './Sections.css';
 // Make sure you have a profile picture in this path
 // You can use the 'profile-placeholder.jpg' from the assets folder for now
-import profilePic from '../../assets/images/profile-placeholder.jpg'; 
+import profilePic from '../../assets/images/profile-placeholder.jpg';
 
 export default function About() {
   return (

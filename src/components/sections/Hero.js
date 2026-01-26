@@ -50,7 +50,7 @@ export default function Hero() {
           <a href="https://www.linkedin.com/in/suganth-j-3507b2293" target="_blank" rel="noopener noreferrer">
             <img src={linkedinIcon} alt="LinkedIn" />
           </a>
-          <a href="https://leetcode.com/u/suganthsuganth749/" target="_blank" rel="noopener noreferrer">
+          <a href="https://leetcode.com/u/Suganth46/" target="_blank" rel="noopener noreferrer">
             <img src={leetcode} alt="LeetCode" />
           </a>
         </div>
