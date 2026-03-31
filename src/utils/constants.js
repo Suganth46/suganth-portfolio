@@ -45,10 +45,14 @@ export const SKILL_CATEGORIES = [
     ],
   },
   {
-    title: 'Cloud & OS',
+    title: 'Devops & Cloud',
     items: [
-      { name: 'Git', icon: 'git.svg' },
-      { name: 'Linux', icon: 'linux.png' }
+      { name: 'Docker', icon: 'docker-svgrepo-com.svg' },
+      { name: 'Kubernetes', icon: 'kubernetes-svgrepo-com.svg' },
+      { name: 'Jenkins', icon: 'jenkins-svgrepo-com.svg' },
+      { name: 'Terraform', icon: 'terraform-icon-svgrepo-com.svg' },
+      { name: 'Ansible', icon: 'ansible-svgrepo-com.svg' },
+      { name: 'Amazon (EC2, S3, VPC, EKS, ECS, ECR)', icon: 'aws-svgrepo-com.svg' }
     ],
   },
   {
@@ -59,9 +63,15 @@ export const SKILL_CATEGORIES = [
     ],
   },
   {
-    title: 'Testing & Tools',
+    title: 'Tools & Tech',
     items: [
       { name: 'Postman', icon: 'postman.svg' },
+      { name: 'Git', icon: 'git.svg' },
+      { name: 'GitHub', icon: 'github-142-svgrepo-com.svg' },
+      { name: 'Linux', icon: 'linux-svgrepo-com.svg' },
+      { name: 'Maven', icon: 'maven-svgrepo-com.svg' },
+      { name: 'Prometheus', icon: 'prometheus-svgrepo-com.svg' },
+      { name: 'Grafana', icon: 'grafana-svgrepo-com.svg' }
     ],
   },
 ];
