@@ -11,9 +11,11 @@ export const GITHUB_USERNAME = 'Suganth46';
  * Add the exact names of your best GitHub repositories here.
  */
 export const FEATURED_PROJECTS = [
-  'portfolio-project',
-  'spring-boot-api-example',
-  'data-structures-algorithms',
+  'Blog_App',
+  'Quiz_Game',
+  'Kubernetes-Deployment-Strategies',
+  'Lan_Based_Software_Installation',
+  'Task_Manager_Java_Console',
 ];
 
 /**
@@ -34,6 +36,10 @@ export const SKILL_CATEGORIES = [
     title: 'Backend & Frameworks',
     items: [
       { name: 'Spring Boot', icon: 'spring.svg' },
+      { name: 'Spring Security', icon: 'spring.svg' },
+      { name: 'JWT', icon: 'java.svg' },
+      { name: 'Hibernate/JPA', icon: 'java.svg' },
+      { name: 'JDBC', icon: 'java.svg' },
     ],
   },
   {
@@ -68,6 +74,7 @@ export const SKILL_CATEGORIES = [
       { name: 'Postman', icon: 'postman.svg' },
       { name: 'Git', icon: 'git.svg' },
       { name: 'GitHub', icon: 'github-142-svgrepo-com.svg' },
+      { name: 'GitHub Actions', icon: 'github-142-svgrepo-com.svg' },
       { name: 'Linux', icon: 'linux-svgrepo-com.svg' },
       { name: 'Maven', icon: 'maven-svgrepo-com.svg' },
       { name: 'Prometheus', icon: 'prometheus-svgrepo-com.svg' },

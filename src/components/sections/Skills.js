@@ -11,7 +11,7 @@ export default function Skills() {
     <section id="skills" className="section">
       <h2>My Technical Skills</h2>
       <p className="skills-intro">
-        
+        A comprehensive overview of my technical stack, highlighting my focus on backend architecture, security, and cloud deployment.
       </p>
 
       <div className="skills-container">

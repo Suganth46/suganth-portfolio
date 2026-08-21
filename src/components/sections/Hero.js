@@ -20,10 +20,10 @@ export default function Hero() {
         <TypeAnimation
           sequence={[
             'Java Developer',
-            2000, // Pause for 2 seconds
-            'Backend Enthusiast',
             2000,
-            'Tech Explorer',
+            'Backend Engineer',
+            2000,
+            'DevOps Enthusiast',
             2000,
           ]}
           wrapper="p"

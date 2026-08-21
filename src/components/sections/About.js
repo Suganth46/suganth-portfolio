@@ -20,13 +20,13 @@ export default function About() {
 
         <div className="about-text-container">
           <p>
-            I am a dedicated <span className="highlight">Java Developer</span> with a strong passion for backend technologies. My journey into software development began with a fascination for how complex systems work, which naturally led me to the world of server-side programming and architecture.
+            I am B.E. CSE (Cyber Security) student at <span className="highlight">Sri Shakthi Institute of Engineering and Technology</span>, graduating in 2027. My journey into software development is driven by a deep fascination with how complex systems are architected and secured.
           </p>
           <p>
-            My core expertise lies in building robust and scalable applications using the <span className="highlight">Spring Boot</span> framework. I enjoy the challenges of designing efficient RESTful APIs, optimizing database interactions with tools like <span className="highlight">MySQL and PostgreSQL</span>, and ensuring the security and reliability of the applications I build.
+            My core stack revolves around <span className="highlight">Java, Spring Boot, Spring Security, JWT, PostgreSQL, and Hibernate</span>. I specialize in building robust backend systems, and I'm actively expanding my DevOps depth with tools like Docker, Kubernetes, AWS, GitHub Actions, Prometheus, and Grafana.
           </p>
           <p>
-            I am always eager to learn and adapt to new technologies. I am driven by the desire to solve complex problems and contribute to meaningful projects that have a real-world impact.
+            With a cybersecurity specialization, I bring a unique security-first mindset to software engineering—serving as a strong differentiator for security-sensitive backend roles and ensuring the applications I build are both highly scalable and secure.
           </p>
         </div>
 

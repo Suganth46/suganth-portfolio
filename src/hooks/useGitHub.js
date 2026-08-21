@@ -1,6 +1,7 @@
 // src/hooks/useGitHub.js
 import { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
+import { FEATURED_PROJECTS } from '../utils/constants';
 
 const GITHUB_API_BASE = 'https://api.github.com/users/';
 const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
@@ -22,16 +23,20 @@ export const useGitHub = (username) => {
         config.headers.Authorization = `token ${GITHUB_TOKEN}`;
       }
 
-      const [profileRes, reposRes] = await Promise.all([
-        axios.get(`${GITHUB_API_BASE}${username}`, config),
-        axios.get(
-          `${GITHUB_API_BASE}${username}/repos?sort=updated&direction=desc&per_page=6`,
-          config
-        ),
+      const profilePromise = axios.get(`${GITHUB_API_BASE}${username}`, config);
+      const reposPromises = FEATURED_PROJECTS.map(repo =>
+        axios.get(`https://api.github.com/repos/${username}/${repo}`, config).catch(() => null)
+      );
+
+      const [profileRes, ...reposResponses] = await Promise.all([
+        profilePromise,
+        ...reposPromises
       ]);
 
+      const validRepos = reposResponses.filter(res => res !== null).map(res => res.data);
+
       setProfile(profileRes.data);
-      setRepos(reposRes.data);
+      setRepos(validRepos);
     } catch (err) {
       const status = err.response?.status;
       if (status === 404) setError('User not found');

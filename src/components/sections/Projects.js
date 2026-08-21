@@ -23,7 +23,7 @@ export default function Projects({ username }) {
       {!loading && profile && (
         <>
           <p className="projects-intro">
-           
+            Here are my featured projects showcasing my expertise in backend engineering, DevOps, and full-stack development.
           </p>
 
           {repos.length > 0 ? (
